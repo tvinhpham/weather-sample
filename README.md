@@ -1,11 +1,18 @@
 # Weather forecast sample app
 
 An sample application to display 5 days weather forecast for selected location.
-Built with Create-react-app with Boostap UI.
+Built with Create-react-app with follow libries: React boostrap, react query, axios, react-lazyload...
 
 ### Project Status
 
+Searching location: Auto suggest location when input at least 2 chars.
+Display some information for 5 day forecast with lazy loading weather images.
 Not supported multilingual yet.
+
+### Testing
+
+Using msw libarary with some predifined mock data.
+Using Jest testing framework.
 
 ## Installation and Setup Instructions
 
