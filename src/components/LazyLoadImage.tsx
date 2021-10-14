@@ -2,7 +2,7 @@ import React, { FC, HtmlHTMLAttributes } from 'react';
 import Spinner from 'react-bootstrap/Spinner';
 import LazyLoad from 'react-lazyload';
 
-const LazyLoadImange: FC<{ src: string; heightRatio?: number } & HtmlHTMLAttributes<HTMLDivElement>> = ({
+const LazyLoadImage: FC<{ src: string; heightRatio?: number } & HtmlHTMLAttributes<HTMLDivElement>> = ({
   src,
   heightRatio = 1,
   style,
@@ -34,4 +34,4 @@ const LazyLoadImange: FC<{ src: string; heightRatio?: number } & HtmlHTMLAttribu
   );
 };
 
-export default LazyLoadImange;
+export default LazyLoadImage;

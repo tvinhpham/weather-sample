@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with loading expectation 1`] = `
+<div
+  className="spinner-grow"
+  data-testid="loadingForcast"
+/>
+`;

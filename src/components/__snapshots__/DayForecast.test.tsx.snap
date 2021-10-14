@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ForecastDetails 1`] = `
+<div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-header"
+    >
+      <div
+        className="text-center card-title h5"
+      >
+        Thursday
+      </div>
+    </div>
+    <div
+      className="w-100 position-relative undefined"
+      style={
+        Object {
+          "objectFit": "cover",
+          "overflow": "hidden",
+          "paddingTop": "100%",
+        }
+      }
+    >
+      <div
+        className="lazyload-wrapper "
+      >
+        <div
+          className="position-absolute w-100 h-100 spinner-grow"
+        />
+      </div>
+    </div>
+    <div
+      className="d-flex flex-column card-body"
+    >
+      <span
+        className="text-center"
+      >
+         Min: 
+        31
+        ℃
+      </span>
+      <span
+        className="text-center"
+      >
+        Max: 
+        20
+        ℃
+      </span>
+    </div>
+  </div>
+</div>
+`;

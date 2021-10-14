@@ -2,7 +2,7 @@ import React from 'react';
 import { FunctionComponent, HTMLAttributes } from 'react';
 import Card from 'react-bootstrap/Card';
 import { parseISO, format } from 'date-fns';
-import LazyLoadImange from './LazyLoadImage';
+import LazyLoadImage from './LazyLoadImage';
 import { API_URL } from '../utils/constants';
 
 export type ForecastDetails = {
@@ -29,7 +29,7 @@ const DayForecast: FunctionComponent<{ data: ForecastDetails } & HTMLAttributes<
         <Card.Header>
           <Card.Title className="text-center">{getDayOfWeek(applicable_date)}</Card.Title>
         </Card.Header>
-        <LazyLoadImange src={`${API_URL}/static/img/weather/${weather_state_abbr}.svg`} />
+        <LazyLoadImage src={`${API_URL}/static/img/weather/${weather_state_abbr}.svg`} />
         <Card.Body className="d-flex flex-column">
           <span className="text-center"> Min: {min_temp.toFixed(0)}&#8451;</span>
           <span className="text-center">Max: {max_temp.toFixed(0)}&#8451;</span>

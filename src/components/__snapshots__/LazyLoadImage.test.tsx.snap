@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lazy rendering image 1`] = `
+<div
+  className="w-100 position-relative undefined"
+  style={
+    Object {
+      "objectFit": "cover",
+      "overflow": "hidden",
+      "paddingTop": "60%",
+    }
+  }
+>
+  <div
+    className="lazyload-wrapper "
+  >
+    <div
+      className="position-absolute w-100 h-100 spinner-grow"
+    />
+  </div>
+</div>
+`;

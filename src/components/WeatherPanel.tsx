@@ -20,20 +20,17 @@ const getLocationDetails = async ({ queryKey }: any) => {
   return data;
 };
 
-const WeatherPanel: FunctionComponent<
-  {
-    locationId?: number;
-  } & HTMLAttributes<HTMLDivElement>
-> = ({ locationId, ...props }) => {
+const WeatherPanel: FunctionComponent<{
+  locationId?: number;
+} & HTMLAttributes<HTMLDivElement>> = ({ locationId, ...props }) => {
   const { isLoading, isError, data } = useQuery(['locationDetails', locationId], getLocationDetails);
-
   if (isLoading) {
-    return <Spinner animation="grow" data-testid="loadingForcast" />;
+    return <Spinner animation='grow' data-testid='loadingForcast' />;
   }
 
   if (isError) {
     return (
-      <Alert key="forecastPnError" variant="danger">
+      <Alert key='forecastPnError' variant='danger'>
         Unexpected error occurs: Cannot connect to server
       </Alert>
     );
@@ -47,7 +44,7 @@ const WeatherPanel: FunctionComponent<
           <DayForecast
             key={locationId + '_' + index}
             data={fc}
-            className="col-12 col-sm-6 col-md-4 col-lg-2 p-2 p-md-1 p-lg-0"
+            className='col-12 col-sm-6 col-md-4 col-lg-2 p-2 p-md-1 p-lg-0'
           />
         ))
       }
